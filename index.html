@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PredictionMart - Forecast the Future</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0A0A0A;
+            color: #E2E8F0;
+        }
+        .glass-card {
+            background: rgba(23, 23, 23, 0.6);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .hero-gradient {
+            background: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(56, 189, 248, 0.3), rgba(10, 10, 10, 0));
+        }
+        .accent-gradient-text {
+            background: linear-gradient(to right, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 glass-card">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold tracking-tight">
+                Prediction<span class="accent-gradient-text">Mart</span>
+            </h1>
+            <nav class="hidden md:flex items-center space-x-8 text-sm">
+                <a href="#how-it-works" class="hover:text-sky-400 transition-colors">How It Works</a>
+                <a href="#examples" class="hover:text-sky-400 transition-colors">Examples</a>
+                <a href="#personas" class="hover:text-sky-400 transition-colors">Who We're For</a>
+                <a href="#widgets" class="hover:text-sky-400 transition-colors">Tools</a>
+            </nav>
+            <button class="px-4 py-2 text-sm font-semibold bg-sky-500 hover:bg-sky-600 rounded-md transition-colors">
+                Launch App
+            </button>
+        </div>
+    </header>
+
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section class="relative py-24 md:py-32 text-center hero-gradient">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl md:text-6xl font-extrabold tracking-tighter mb-4">
+                    Clarity in a Complex World.
+                </h2>
+                <p class="max-w-3xl mx-auto text-lg md:text-xl text-slate-400 mb-8">
+                    PredictionMart is a cutting-edge platform where you can trade on the outcomes of future events. We empower you to forecast the future by transforming collective wisdom into actionable, tradable insights.
+                </p>
+                <a href="#how-it-works" class="px-8 py-3 font-semibold bg-white text-slate-900 rounded-md hover:bg-slate-200 transition-colors">
+                    Learn How
+                </a>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section id="how-it-works" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h3 class="text-3xl md:text-4xl font-bold tracking-tight">How Prediction Markets Work</h3>
+                    <p class="max-w-2xl mx-auto mt-4 text-slate-400">
+                        Trading on events is straightforward. A share's price reflects the market's belief in an outcome's probability, ranging from $0.01 to $0.99.
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Step 1 -->
+                    <div class="glass-card p-6 rounded-xl">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-lg bg-sky-500/10 mb-4">
+                            <i data-lucide="help-circle" class="text-sky-400"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2">1. Event Definition</h4>
+                        <p class="text-slate-400 text-sm">An event with a clear, verifiable outcome is listed. For example: "Will Apple release an AI-powered iPhone by June 2025?"</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="glass-card p-6 rounded-xl">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-lg bg-sky-500/10 mb-4">
+                            <i data-lucide="repeat" class="text-sky-400"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2">2. Trading Contracts</h4>
+                        <p class="text-slate-400 text-sm">You buy shares for the outcome you believe in. A "Yes" share pays out $1 if the event happens, $0 if not. "No" shares are the opposite.</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="glass-card p-6 rounded-xl">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-lg bg-sky-500/10 mb-4">
+                            <i data-lucide="line-chart" class="text-sky-400"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2">3. Price = Probability</h4>
+                        <p class="text-slate-400 text-sm">A "Yes" share price of $0.22 implies a 22% chance of the event occurring. As sentiment changes, so does the price, creating trading opportunities.</p>
+                    </div>
+                    <!-- Step 4 -->
+                    <div class="glass-card p-6 rounded-xl">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-lg bg-sky-500/10 mb-4">
+                            <i data-lucide="check-circle" class="text-sky-400"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2">4. Settlement</h4>
+                        <p class="text-slate-400 text-sm">Once the event's outcome is known, correct shares pay out $1 each. Your profit is the payout minus your purchase price.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Example Transactions Section -->
+        <section id="examples" class="py-20 bg-slate-900/50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h3 class="text-3xl md:text-4xl font-bold tracking-tight">Example Transactions</h3>
+                    <p class="max-w-2xl mx-auto mt-4 text-slate-400">See how you can monetize your knowledge across tech, economics, and more.</p>
+                </div>
+                <div class="grid md:grid-cols-1 lg:grid-cols-2 gap-8">
+                    <!-- Example 1 -->
+                    <div class="glass-card p-8 rounded-xl">
+                        <h4 class="text-lg font-semibold text-sky-400 mb-2">Tech Forecast</h4>
+                        <p class="text-xl font-bold mb-4">"Will SpaceX land Starship on Mars by 2030?"</p>
+                        <p class="text-sm text-slate-300 mb-4">
+                            A trader believes the market is underestimating SpaceX. She buys 1,000 "Yes" shares at <span class="font-bold text-white">$0.22</span> each, for a total investment of <span class="font-bold text-white">$220</span>.
+                        </p>
+                        <p class="text-sm text-slate-300 mb-4">
+                            Months later, after a successful test flight, market confidence grows and the price for "Yes" shares rises to <span class="font-bold text-white">$0.60</span>. She sells her shares for a profit before the event even concludes.
+                        </p>
+                        <div class="bg-green-500/10 text-green-300 p-4 rounded-lg text-center">
+                            <p class="font-bold text-lg">Profit: ($0.60 - $0.22) x 1,000 = $380</p>
+                        </div>
+                    </div>
+                    <!-- Example 2 -->
+                    <div class="glass-card p-8 rounded-xl">
+                        <h4 class="text-lg font-semibold text-sky-400 mb-2">Economic Analysis</h4>
+                        <p class="text-xl font-bold mb-4">"Will India's annual GDP growth exceed 7% in 2025?"</p>
+                         <p class="text-sm text-slate-300 mb-4">
+                            An economist is skeptical about optimistic forecasts. He sees the market price for "Yes" shares at <span class="font-bold text-white">$0.85</span>, which he believes is too high. He buys 500 "No" shares at <span class="font-bold text-white">$0.15</span>.
+                        </p>
+                        <p class="text-sm text-slate-300 mb-4">
+                            Official results are released, and GDP growth is 6.8%. The "No" outcome is confirmed. His "No" shares settle at <span class="font-bold text-white">$1.00</span> each.
+                        </p>
+                        <div class="bg-green-500/10 text-green-300 p-4 rounded-lg text-center">
+                            <p class="font-bold text-lg">Profit: (500 x $1.00) - (500 x $0.15) = $425</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Personas Section -->
+        <section id="personas" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h3 class="text-3xl md:text-4xl font-bold tracking-tight">Who We're For</h3>
+                    <p class="max-w-2xl mx-auto mt-4 text-slate-400">Our platform is designed for informed individuals who want to leverage their expertise.</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Persona 1 -->
+                    <div class="text-center">
+                        <img src="https://placehold.co/128x128/1e293b/94a3b8?text=AA" class="mx-auto rounded-full mb-4 border-2 border-slate-700" alt="Ananya">
+                        <h4 class="text-xl font-bold">Ananya, The Analyst</h4>
+                        <p class="text-sm text-sky-400 mb-2">Mumbai</p>
+                        <p class="text-slate-400 text-sm max-w-xs mx-auto">Uses PredictionMart to gain alternative data on market-moving events and hedge her client's portfolios against geopolitical risks.</p>
+                    </div>
+                    <!-- Persona 2 -->
+                    <div class="text-center">
+                        <img src="https://placehold.co/128x128/1e293b/94a3b8?text=W" class="mx-auto rounded-full mb-4 border-2 border-slate-700" alt="Wei">
+                        <h4 class="text-xl font-bold">Wei, The Tech Enthusiast</h4>
+                        <p class="text-sm text-sky-400 mb-2">Singapore</p>
+                        <p class="text-slate-400 text-sm max-w-xs mx-auto">Trades on tech product releases and policy changes, monetizing his deep industry knowledge about supply chains and feature leaks.</p>
+                    </div>
+                    <!-- Persona 3 -->
+                    <div class="text-center">
+                        <img src="https://placehold.co/128x128/1e293b/94a3b8?text=O" class="mx-auto rounded-full mb-4 border-2 border-slate-700" alt="Omar">
+                        <h4 class="text-xl font-bold">Omar, The Geopolitical Junkie</h4>
+                        <p class="text-sm text-sky-400 mb-2">Dubai</p>
+                        <p class="text-slate-400 text-sm max-w-xs mx-auto">Follows global trade and politics closely. He uses PredictionMart to test his analyses and profit from his unique insights.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Widgets Section -->
+        <section id="widgets" class="py-20 bg-slate-900/50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h3 class="text-3xl md:text-4xl font-bold tracking-tight">Platform Tools & HQ</h3>
+                    <p class="max-w-2xl mx-auto mt-4 text-slate-400">Use our tools to plan your trades and see where we're based.</p>
+                </div>
+                <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+                    <!-- Payoff Calculator Widget -->
+                    <div class="glass-card p-8 rounded-xl w-full max-w-md mx-auto">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-lg bg-sky-500/10 flex-shrink-0">
+                                <i data-lucide="calculator" class="text-sky-400"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-2xl font-bold">Payoff Calculator</h4>
+                                <p class="text-slate-400 text-sm">Calculate your potential profit before you trade.</p>
+                            </div>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div>
+                                <label for="sharePrice" class="block text-sm font-medium text-slate-300 mb-1">Price Per Share ($)</label>
+                                <input type="number" id="sharePrice" step="0.01" min="0.01" max="0.99" placeholder="e.g., 0.25" class="w-full bg-slate-800 border border-slate-600 rounded-md p-2 focus:ring-2 focus:ring-sky-500 focus:outline-none transition">
+                            </div>
+                            <div>
+                                <label for="investmentAmount" class="block text-sm font-medium text-slate-300 mb-1">Total Investment ($)</label>
+                                <input type="number" id="investmentAmount" step="10" min="1" placeholder="e.g., 100" class="w-full bg-slate-800 border border-slate-600 rounded-md p-2 focus:ring-2 focus:ring-sky-500 focus:outline-none transition">
+                            </div>
+                            <button id="calculateBtn" class="w-full px-4 py-2 font-semibold bg-sky-500 hover:bg-sky-600 rounded-md transition-colors">
+                                Calculate Payoff
+                            </button>
+                        </div>
+                        
+                        <div id="calculatorResult" class="mt-6 bg-slate-800/50 p-4 rounded-lg space-y-2 hidden">
+                           <!-- Results will be injected here -->
+                        </div>
+                    </div>
+                    
+                    <!-- Google Maps Widget -->
+                    <div class="w-full max-w-md mx-auto lg:max-w-none">
+                         <div class="flex items-center gap-4 mb-6">
+                             <div class="flex items-center justify-center h-12 w-12 rounded-lg bg-sky-500/10 flex-shrink-0">
+                                <i data-lucide="map-pin" class="text-sky-400"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-2xl font-bold">Our Headquarters</h4>
+                                <p class="text-slate-400 text-sm">Launching from Dubai, UAE.</p>
+                            </div>
+                        </div>
+                        <div class="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden border border-slate-700">
+                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28904.959146612648!2d55.12550921765489!3d25.097802544268657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6b6915f1434d%3A0x316198ea6ee3651e!2sAl%20Sufouh%20-%20Dubai%20Internet%20City%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1759924529106!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <!-- Footer -->
+    <footer class="border-t border-slate-800">
+        <div class="container mx-auto px-6 py-8 text-center text-slate-500 text-sm">
+            <p>&copy; 2025 PredictionMart. All Rights Reserved.</p>
+            <p class="mt-2">Prediction trading involves risk and is not suitable for all investors. This is a fictional website for a project.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Payoff Calculator Widget Logic
+        const sharePriceInput = document.getElementById('sharePrice');
+        const investmentAmountInput = document.getElementById('investmentAmount');
+        const calculateBtn = document.getElementById('calculateBtn');
+        const resultDiv = document.getElementById('calculatorResult');
+
+        calculateBtn.addEventListener('click', () => {
+            const price = parseFloat(sharePriceInput.value);
+            const investment = parseFloat(investmentAmountInput.value);
+
+            // Clear previous results and hide
+            resultDiv.innerHTML = '';
+            resultDiv.classList.add('hidden');
+
+            // --- Input Validation ---
+            if (isNaN(price) || isNaN(investment)) {
+                resultDiv.innerHTML = `<p class="text-red-400 text-sm">Please enter valid numbers for both fields.</p>`;
+                resultDiv.classList.remove('hidden');
+                return;
+            }
+            if (price <= 0 || price >= 1) {
+                resultDiv.innerHTML = `<p class="text-red-400 text-sm">Share price must be between $0.01 and $0.99.</p>`;
+                resultDiv.classList.remove('hidden');
+                return;
+            }
+             if (investment <= 0) {
+                resultDiv.innerHTML = `<p class="text-red-400 text-sm">Investment amount must be greater than $0.</p>`;
+                resultDiv.classList.remove('hidden');
+                return;
+            }
+
+            // --- Calculation ---
+            const shares = investment / price;
+            const potentialPayout = shares * 1; // Each correct share pays out $1
+            const potentialProfit = potentialPayout - investment;
+
+            // --- Display Results ---
+            resultDiv.innerHTML = `
+                <div class="flex justify-between items-center text-sm">
+                    <span class="text-slate-400">Shares you can buy:</span>
+                    <span class="font-semibold text-white">${shares.toFixed(2)}</span>
+                </div>
+                <div class="flex justify-between items-center text-sm">
+                    <span class="text-slate-400">Potential Payout:</span>
+                    <span class="font-semibold text-white">$${potentialPayout.toFixed(2)}</span>
+                </div>
+                <hr class="border-slate-700 my-2">
+                <div class="flex justify-between items-center text-lg">
+                    <span class="text-green-400 font-bold">Potential Profit:</span>
+                    <span class="font-bold text-green-300">$${potentialProfit.toFixed(2)}</span>
+                </div>
+            `;
+            resultDiv.classList.remove('hidden');
+        });
+    </script>
+</body>
+</html>
